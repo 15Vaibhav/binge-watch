@@ -1,0 +1,22 @@
+.addButton {
+  margin-left: auto;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+
+mat-list-item {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0;
+}
+
+.search-hero {
+  margin-top: 5px;
+  mat-form-field {
+    width: 86%;
+    margin-left: 20px;
+}
+}

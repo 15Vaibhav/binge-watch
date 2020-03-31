@@ -1,0 +1,27 @@
+<div class="search-hero">
+  <form>
+    <mat-form-field>
+      <input
+        type="text"
+        placeholder="Search for movie or shows"
+        matInput
+        [formControl]="myControl"
+      />
+    </mat-form-field>
+  </form>
+</div>
+
+<mat-nav-list>
+  <mat-list-item (click)="openMovieDialog(movie)" *ngFor="let movie of movies">
+    <img
+      src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{
+        movie.poster_path || movie.profile_path
+      }}"
+      onerror="this.src='../../../../assets/wall3.jpg';"
+    />
+    <a>{{ movie.title || movie.name }}</a>
+    <button class="addButton" mat-icon-button>
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-nav-list>

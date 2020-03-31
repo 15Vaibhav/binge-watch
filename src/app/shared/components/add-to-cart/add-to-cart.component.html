@@ -1,0 +1,15 @@
+<div class="add-to-cart-container">
+    <div style="flex:1 ">
+        <img  src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{
+            data.movie.poster_path || data.movie.profile_path
+          }}">
+    </div>
+    <div style="flex:1 ">
+        <p>{{ data.movie.title || data.movie.name }}</p>
+        <input type="text" placeholder="Enter genre">
+        <br>
+        <button mat-button color="primary" (click)="addToCart(data)">Add</button>
+        <button mat-button color="warn" mat-dialog-close>Cancel</button>
+        <p style="color: red;">already in cart</p>
+    </div>
+</div>

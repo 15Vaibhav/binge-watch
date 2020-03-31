@@ -1,0 +1,27 @@
+.add-to-cart-container {
+    height: 140px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+    align-content: stretch;
+    margin-top: 25px;
+    img {
+        width: 80%;
+        height: 80%;
+    }
+
+    p {
+        margin:0;
+    }
+    button {
+        margin-top: 5px;
+    }
+
+    input {
+    height: 15%;
+    border-radius: 10%;
+    margin: 9% 0;
+    }
+}
