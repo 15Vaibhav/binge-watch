@@ -23,5 +23,17 @@ export class MovieService {
 
   serachMovie(movie) {
     return this.http.get(`${environment.apiUrl}/search/multi?api_key=aa663930fc097de244238356b50a7bc7&language=en-US&query=${movie}&include_adult=false`);
-     }
+  }
+
+  addToCart(data) {
+    return this.http.post(`${environment.serverApi}/addToCart`,{data})
+  }
+
+  getCartItem() {
+    return this.http.get(`${environment.serverApi}/getAllCartItem`) 
+  }
+
+  watchedStatus(data) {
+    return this.http.patch(`${environment.serverApi}/changeStatus`,{data})
+  }
 }

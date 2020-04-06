@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://api.themoviedb.org/3'
+  apiUrl: 'https://api.themoviedb.org/3',
+  serverApi: 'https://desolate-shelf-86511.herokuapp.com',
 };
 
 /*

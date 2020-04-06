@@ -6,10 +6,10 @@
     </div>
     <div style="flex:1 ">
         <p>{{ data.movie.title || data.movie.name }}</p>
-        <input type="text" placeholder="Enter genre">
+        <input type="text" placeholder="Enter genre" #InputData>
         <br>
-        <button mat-button color="primary" (click)="addToCart(data)">Add</button>
+        <button mat-button color="primary" (click)="saveToCart(data,InputData.value)" >Add</button>
         <button mat-button color="warn" mat-dialog-close>Cancel</button>
-        <p style="color: red;">already in cart</p>
+        <p style="color: red;" *ngIf = 'alreadyExist'>already in cart</p>
     </div>
 </div>
